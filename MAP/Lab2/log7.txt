@@ -1,0 +1,250 @@
+=============== ID = 7 ==============
+
+ExecutionStack: [Ref(Int) v, (New(v, 20) ; (Ref(Ref(Int)) a ; (New(a, v) ; (New(v, 30) ; print(HeapRead(HeapRead(a)))))))]
+Symbol Table:
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 7 ==============
+
+ExecutionStack: [(New(v, 20) ; (Ref(Ref(Int)) a ; (New(a, v) ; (New(v, 30) ; print(HeapRead(HeapRead(a)))))))]
+Symbol Table:v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 7 ==============
+
+ExecutionStack: [New(v, 20), (Ref(Ref(Int)) a ; (New(a, v) ; (New(v, 30) ; print(HeapRead(HeapRead(a))))))]
+Symbol Table:v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 7 ==============
+
+ExecutionStack: [(Ref(Ref(Int)) a ; (New(a, v) ; (New(v, 30) ; print(HeapRead(HeapRead(a))))))]
+Symbol Table:v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+0 -> 20
+
+==============================
+
+=============== ID = 7 ==============
+
+ExecutionStack: [Ref(Ref(Int)) a, (New(a, v) ; (New(v, 30) ; print(HeapRead(HeapRead(a)))))]
+Symbol Table:v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+0 -> 20
+
+==============================
+
+=============== ID = 7 ==============
+
+ExecutionStack: [(New(a, v) ; (New(v, 30) ; print(HeapRead(HeapRead(a)))))]
+Symbol Table:a -> Reference(0, Ref(Int)) v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+0 -> 20
+
+==============================
+
+=============== ID = 7 ==============
+
+ExecutionStack: [New(a, v), (New(v, 30) ; print(HeapRead(HeapRead(a))))]
+Symbol Table:a -> Reference(0, Ref(Int)) v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+0 -> 20
+
+==============================
+
+=============== ID = 7 ==============
+
+ExecutionStack: [(New(v, 30) ; print(HeapRead(HeapRead(a))))]
+Symbol Table:a -> Reference(1, Ref(Int)) v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+0 -> 20
+1 -> Reference(0, Int)
+
+==============================
+
+=============== ID = 7 ==============
+
+ExecutionStack: [New(v, 30), print(HeapRead(HeapRead(a)))]
+Symbol Table:a -> Reference(1, Ref(Int)) v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+0 -> 20
+1 -> Reference(0, Int)
+
+==============================
+
+=============== ID = 7 ==============
+
+ExecutionStack: [print(HeapRead(HeapRead(a)))]
+Symbol Table:a -> Reference(1, Ref(Int)) v -> Reference(2, Int) 
+Output: 
+File Table:
+Heap:
+0 -> 20
+1 -> Reference(0, Int)
+2 -> 30
+
+==============================
+
+=============== ID = 7 ==============
+
+ExecutionStack:]
+Symbol Table:a -> Reference(1, Ref(Int)) v -> Reference(2, Int) 
+Output: 20
+
+File Table:
+Heap:
+0 -> 20
+1 -> Reference(0, Int)
+2 -> 30
+
+==============================
+
+=============== ID = 5 ==============
+
+ExecutionStack: [Ref(Int) v, (New(v, 20) ; (Ref(Ref(Int)) a ; (New(a, v) ; (New(v, 30) ; print(HeapRead(HeapRead(a)))))))]
+Symbol Table:
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 5 ==============
+
+ExecutionStack: [(New(v, 20) ; (Ref(Ref(Int)) a ; (New(a, v) ; (New(v, 30) ; print(HeapRead(HeapRead(a)))))))]
+Symbol Table:v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 5 ==============
+
+ExecutionStack: [New(v, 20), (Ref(Ref(Int)) a ; (New(a, v) ; (New(v, 30) ; print(HeapRead(HeapRead(a))))))]
+Symbol Table:v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 5 ==============
+
+ExecutionStack: [(Ref(Ref(Int)) a ; (New(a, v) ; (New(v, 30) ; print(HeapRead(HeapRead(a))))))]
+Symbol Table:v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+0 -> 20
+
+==============================
+
+=============== ID = 5 ==============
+
+ExecutionStack: [Ref(Ref(Int)) a, (New(a, v) ; (New(v, 30) ; print(HeapRead(HeapRead(a)))))]
+Symbol Table:v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+0 -> 20
+
+==============================
+
+=============== ID = 5 ==============
+
+ExecutionStack: [(New(a, v) ; (New(v, 30) ; print(HeapRead(HeapRead(a)))))]
+Symbol Table:a -> Reference(0, Ref(Int)) v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+0 -> 20
+
+==============================
+
+=============== ID = 5 ==============
+
+ExecutionStack: [New(a, v), (New(v, 30) ; print(HeapRead(HeapRead(a))))]
+Symbol Table:a -> Reference(0, Ref(Int)) v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+0 -> 20
+
+==============================
+
+=============== ID = 5 ==============
+
+ExecutionStack: [(New(v, 30) ; print(HeapRead(HeapRead(a))))]
+Symbol Table:a -> Reference(1, Ref(Int)) v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+0 -> 20
+1 -> Reference(0, Int)
+
+==============================
+
+=============== ID = 5 ==============
+
+ExecutionStack: [New(v, 30), print(HeapRead(HeapRead(a)))]
+Symbol Table:a -> Reference(1, Ref(Int)) v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+0 -> 20
+1 -> Reference(0, Int)
+
+==============================
+
+=============== ID = 5 ==============
+
+ExecutionStack: [print(HeapRead(HeapRead(a)))]
+Symbol Table:a -> Reference(1, Ref(Int)) v -> Reference(2, Int) 
+Output: 
+File Table:
+Heap:
+0 -> 20
+1 -> Reference(0, Int)
+2 -> 30
+
+==============================
+
+=============== ID = 5 ==============
+
+ExecutionStack:]
+Symbol Table:a -> Reference(1, Ref(Int)) v -> Reference(2, Int) 
+Output: 20
+
+File Table:
+Heap:
+0 -> 20
+1 -> Reference(0, Int)
+2 -> 30
+
+==============================
+

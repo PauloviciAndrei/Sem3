@@ -1,0 +1,1018 @@
+=============== ID = 1 ==============
+
+ExecutionStack: [Int v, (Int x ; (Int y ; (v = 0 ; (repeat((fork((print(v) ; v = v - 1)) ; v = v + 1)) until v ==  3 ; (x = 1 ; (no operation ; (y = 3 ; (no operation ; print(v * 10)))))))))]
+Symbol Table:
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [(Int x ; (Int y ; (v = 0 ; (repeat((fork((print(v) ; v = v - 1)) ; v = v + 1)) until v ==  3 ; (x = 1 ; (no operation ; (y = 3 ; (no operation ; print(v * 10)))))))))]
+Symbol Table:v -> 0 
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [Int x, (Int y ; (v = 0 ; (repeat((fork((print(v) ; v = v - 1)) ; v = v + 1)) until v ==  3 ; (x = 1 ; (no operation ; (y = 3 ; (no operation ; print(v * 10))))))))]
+Symbol Table:v -> 0 
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [(Int y ; (v = 0 ; (repeat((fork((print(v) ; v = v - 1)) ; v = v + 1)) until v ==  3 ; (x = 1 ; (no operation ; (y = 3 ; (no operation ; print(v * 10))))))))]
+Symbol Table:v -> 0 x -> 0 
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [Int y, (v = 0 ; (repeat((fork((print(v) ; v = v - 1)) ; v = v + 1)) until v ==  3 ; (x = 1 ; (no operation ; (y = 3 ; (no operation ; print(v * 10)))))))]
+Symbol Table:v -> 0 x -> 0 
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [(v = 0 ; (repeat((fork((print(v) ; v = v - 1)) ; v = v + 1)) until v ==  3 ; (x = 1 ; (no operation ; (y = 3 ; (no operation ; print(v * 10)))))))]
+Symbol Table:v -> 0 x -> 0 y -> 0 
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [v = 0, (repeat((fork((print(v) ; v = v - 1)) ; v = v + 1)) until v ==  3 ; (x = 1 ; (no operation ; (y = 3 ; (no operation ; print(v * 10))))))]
+Symbol Table:v -> 0 x -> 0 y -> 0 
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [(repeat((fork((print(v) ; v = v - 1)) ; v = v + 1)) until v ==  3 ; (x = 1 ; (no operation ; (y = 3 ; (no operation ; print(v * 10))))))]
+Symbol Table:v -> 0 x -> 0 y -> 0 
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [repeat((fork((print(v) ; v = v - 1)) ; v = v + 1)) until v ==  3, (x = 1 ; (no operation ; (y = 3 ; (no operation ; print(v * 10)))))]
+Symbol Table:v -> 0 x -> 0 y -> 0 
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [((fork((print(v) ; v = v - 1)) ; v = v + 1) ; While(!v ==  3) {(fork((print(v) ; v = v - 1)) ; v = v + 1)}), (x = 1 ; (no operation ; (y = 3 ; (no operation ; print(v * 10)))))]
+Symbol Table:v -> 0 x -> 0 y -> 0 
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [(fork((print(v) ; v = v - 1)) ; v = v + 1), While(!v ==  3) {(fork((print(v) ; v = v - 1)) ; v = v + 1)}, (x = 1 ; (no operation ; (y = 3 ; (no operation ; print(v * 10)))))]
+Symbol Table:v -> 0 x -> 0 y -> 0 
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [fork((print(v) ; v = v - 1)), v = v + 1, While(!v ==  3) {(fork((print(v) ; v = v - 1)) ; v = v + 1)}, (x = 1 ; (no operation ; (y = 3 ; (no operation ; print(v * 10)))))]
+Symbol Table:v -> 0 x -> 0 y -> 0 
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [v = v + 1, While(!v ==  3) {(fork((print(v) ; v = v - 1)) ; v = v + 1)}, (x = 1 ; (no operation ; (y = 3 ; (no operation ; print(v * 10)))))]
+Symbol Table:v -> 0 x -> 0 y -> 0 
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack: [(print(v) ; v = v - 1)]
+Symbol Table:v -> 0 x -> 0 y -> 0 
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [While(!v ==  3) {(fork((print(v) ; v = v - 1)) ; v = v + 1)}, (x = 1 ; (no operation ; (y = 3 ; (no operation ; print(v * 10)))))]
+Symbol Table:v -> 1 x -> 0 y -> 0 
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack: [print(v), v = v - 1]
+Symbol Table:v -> 0 x -> 0 y -> 0 
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [(fork((print(v) ; v = v - 1)) ; v = v + 1), While(!v ==  3) {(fork((print(v) ; v = v - 1)) ; v = v + 1)}, (x = 1 ; (no operation ; (y = 3 ; (no operation ; print(v * 10)))))]
+Symbol Table:v -> 1 x -> 0 y -> 0 
+Output: 0
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack: [v = v - 1]
+Symbol Table:v -> 0 x -> 0 y -> 0 
+Output: 0
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [fork((print(v) ; v = v - 1)), v = v + 1, While(!v ==  3) {(fork((print(v) ; v = v - 1)) ; v = v + 1)}, (x = 1 ; (no operation ; (y = 3 ; (no operation ; print(v * 10)))))]
+Symbol Table:v -> 1 x -> 0 y -> 0 
+Output: 0
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:v -> -1 x -> 0 y -> 0 
+Output: 0
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [v = v + 1, While(!v ==  3) {(fork((print(v) ; v = v - 1)) ; v = v + 1)}, (x = 1 ; (no operation ; (y = 3 ; (no operation ; print(v * 10)))))]
+Symbol Table:v -> 1 x -> 0 y -> 0 
+Output: 0
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:v -> -1 x -> 0 y -> 0 
+Output: 0
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [(print(v) ; v = v - 1)]
+Symbol Table:v -> 1 x -> 0 y -> 0 
+Output: 0
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [While(!v ==  3) {(fork((print(v) ; v = v - 1)) ; v = v + 1)}, (x = 1 ; (no operation ; (y = 3 ; (no operation ; print(v * 10)))))]
+Symbol Table:v -> 2 x -> 0 y -> 0 
+Output: 0
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:v -> -1 x -> 0 y -> 0 
+Output: 0
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [print(v), v = v - 1]
+Symbol Table:v -> 1 x -> 0 y -> 0 
+Output: 0
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [(fork((print(v) ; v = v - 1)) ; v = v + 1), While(!v ==  3) {(fork((print(v) ; v = v - 1)) ; v = v + 1)}, (x = 1 ; (no operation ; (y = 3 ; (no operation ; print(v * 10)))))]
+Symbol Table:v -> 2 x -> 0 y -> 0 
+Output: 0
+1
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:v -> -1 x -> 0 y -> 0 
+Output: 0
+1
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [v = v - 1]
+Symbol Table:v -> 1 x -> 0 y -> 0 
+Output: 0
+1
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [fork((print(v) ; v = v - 1)), v = v + 1, While(!v ==  3) {(fork((print(v) ; v = v - 1)) ; v = v + 1)}, (x = 1 ; (no operation ; (y = 3 ; (no operation ; print(v * 10)))))]
+Symbol Table:v -> 2 x -> 0 y -> 0 
+Output: 0
+1
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:v -> -1 x -> 0 y -> 0 
+Output: 0
+1
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 0 x -> 0 y -> 0 
+Output: 0
+1
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [v = v + 1, While(!v ==  3) {(fork((print(v) ; v = v - 1)) ; v = v + 1)}, (x = 1 ; (no operation ; (y = 3 ; (no operation ; print(v * 10)))))]
+Symbol Table:v -> 2 x -> 0 y -> 0 
+Output: 0
+1
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:v -> -1 x -> 0 y -> 0 
+Output: 0
+1
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 0 x -> 0 y -> 0 
+Output: 0
+1
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 4 ==============
+
+ExecutionStack: [(print(v) ; v = v - 1)]
+Symbol Table:v -> 2 x -> 0 y -> 0 
+Output: 0
+1
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [While(!v ==  3) {(fork((print(v) ; v = v - 1)) ; v = v + 1)}, (x = 1 ; (no operation ; (y = 3 ; (no operation ; print(v * 10)))))]
+Symbol Table:v -> 3 x -> 0 y -> 0 
+Output: 0
+1
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:v -> -1 x -> 0 y -> 0 
+Output: 0
+1
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 0 x -> 0 y -> 0 
+Output: 0
+1
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 4 ==============
+
+ExecutionStack: [print(v), v = v - 1]
+Symbol Table:v -> 2 x -> 0 y -> 0 
+Output: 0
+1
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [(x = 1 ; (no operation ; (y = 3 ; (no operation ; print(v * 10)))))]
+Symbol Table:v -> 3 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:v -> -1 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 0 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 4 ==============
+
+ExecutionStack: [v = v - 1]
+Symbol Table:v -> 2 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [x = 1, (no operation ; (y = 3 ; (no operation ; print(v * 10))))]
+Symbol Table:v -> 3 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:v -> -1 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 0 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 4 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 1 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [(no operation ; (y = 3 ; (no operation ; print(v * 10))))]
+Symbol Table:v -> 3 x -> 1 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:v -> -1 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 0 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 4 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 1 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [no operation, (y = 3 ; (no operation ; print(v * 10)))]
+Symbol Table:v -> 3 x -> 1 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:v -> -1 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 0 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 4 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 1 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [(y = 3 ; (no operation ; print(v * 10)))]
+Symbol Table:v -> 3 x -> 1 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:v -> -1 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 0 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 4 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 1 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [y = 3, (no operation ; print(v * 10))]
+Symbol Table:v -> 3 x -> 1 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:v -> -1 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 0 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 4 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 1 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [(no operation ; print(v * 10))]
+Symbol Table:v -> 3 x -> 1 y -> 3 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:v -> -1 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 0 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 4 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 1 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [no operation, print(v * 10)]
+Symbol Table:v -> 3 x -> 1 y -> 3 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:v -> -1 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 0 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 4 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 1 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [print(v * 10)]
+Symbol Table:v -> 3 x -> 1 y -> 3 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:v -> -1 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 0 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 4 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 1 x -> 0 y -> 0 
+Output: 0
+1
+2
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 3 x -> 1 y -> 3 
+Output: 0
+1
+2
+30
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:v -> -1 x -> 0 y -> 0 
+Output: 0
+1
+2
+30
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 0 x -> 0 y -> 0 
+Output: 0
+1
+2
+30
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 4 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 1 x -> 0 y -> 0 
+Output: 0
+1
+2
+30
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 3 x -> 1 y -> 3 
+Output: 0
+1
+2
+30
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:v -> -1 x -> 0 y -> 0 
+Output: 0
+1
+2
+30
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 0 x -> 0 y -> 0 
+Output: 0
+1
+2
+30
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 4 ==============
+
+ExecutionStack:]
+Symbol Table:v -> 1 x -> 0 y -> 0 
+Output: 0
+1
+2
+30
+
+File Table:
+Heap:
+BarrierTable:
+==============================
+

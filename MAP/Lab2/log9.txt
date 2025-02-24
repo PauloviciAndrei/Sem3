@@ -1,0 +1,410 @@
+=============================
+
+ExecutionStack: [Int a, (Int b ; (a = 5 ; (b = 7 ; While(a <  b) {a = a + 1})))]
+Symbol Table:
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============================
+
+ExecutionStack: [(Int b ; (a = 5 ; (b = 7 ; While(a <  b) {a = a + 1})))]
+Symbol Table:a -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============================
+
+ExecutionStack: [Int b, (a = 5 ; (b = 7 ; While(a <  b) {a = a + 1}))]
+Symbol Table:a -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============================
+
+ExecutionStack: [(a = 5 ; (b = 7 ; While(a <  b) {a = a + 1}))]
+Symbol Table:a -> 0 b -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============================
+
+ExecutionStack: [a = 5, (b = 7 ; While(a <  b) {a = a + 1})]
+Symbol Table:a -> 0 b -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============================
+
+ExecutionStack: [(b = 7 ; While(a <  b) {a = a + 1})]
+Symbol Table:a -> 5 b -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============================
+
+ExecutionStack: [b = 7, While(a <  b) {a = a + 1}]
+Symbol Table:a -> 5 b -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============================
+
+ExecutionStack: [While(a <  b) {a = a + 1}]
+Symbol Table:a -> 5 b -> 7 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============================
+
+ExecutionStack: [a = a + 1, While(a <  b) {a = a + 1}]
+Symbol Table:a -> 5 b -> 7 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============================
+
+ExecutionStack: [While(a <  b) {a = a + 1}]
+Symbol Table:a -> 6 b -> 7 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============================
+
+ExecutionStack: [a = a + 1, While(a <  b) {a = a + 1}]
+Symbol Table:a -> 6 b -> 7 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============================
+
+ExecutionStack: [While(a <  b) {a = a + 1}]
+Symbol Table:a -> 7 b -> 7 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============================
+
+ExecutionStack:]
+Symbol Table:a -> 7 b -> 7 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [(Int a ; (Int b ; (a = 5 ; (b = 7 ; While(a <  b) {a = a + 1}))))]
+Symbol Table:
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [Int a, (Int b ; (a = 5 ; (b = 7 ; While(a <  b) {a = a + 1})))]
+Symbol Table:
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [(Int b ; (a = 5 ; (b = 7 ; While(a <  b) {a = a + 1})))]
+Symbol Table:a -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [Int b, (a = 5 ; (b = 7 ; While(a <  b) {a = a + 1}))]
+Symbol Table:a -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [(a = 5 ; (b = 7 ; While(a <  b) {a = a + 1}))]
+Symbol Table:a -> 0 b -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [a = 5, (b = 7 ; While(a <  b) {a = a + 1})]
+Symbol Table:a -> 0 b -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [(b = 7 ; While(a <  b) {a = a + 1})]
+Symbol Table:a -> 5 b -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [(b = 7 ; While(a <  b) {a = a + 1})]
+Symbol Table:a -> 5 b -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [While(a <  b) {a = a + 1}]
+Symbol Table:a -> 5 b -> 7 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [While(a <  b) {a = a + 1}]
+Symbol Table:a -> 5 b -> 7 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [While(a <  b) {a = a + 1}]
+Symbol Table:a -> 5 b -> 7 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [a = a + 1, While(a <  b) {a = a + 1}]
+Symbol Table:a -> 6 b -> 7 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [a = a + 1, While(a <  b) {a = a + 1}]
+Symbol Table:a -> 6 b -> 7 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [a = a + 1, While(a <  b) {a = a + 1}]
+Symbol Table:a -> 6 b -> 7 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [a = a + 1, While(a <  b) {a = a + 1}]
+Symbol Table:a -> 6 b -> 7 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [Int a, (Int b ; (a = 5 ; (b = 7 ; While(a <  b) {a = a + 1})))]
+Symbol Table:
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [(Int b ; (a = 5 ; (b = 7 ; While(a <  b) {a = a + 1})))]
+Symbol Table:a -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [Int b, (a = 5 ; (b = 7 ; While(a <  b) {a = a + 1}))]
+Symbol Table:a -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [(a = 5 ; (b = 7 ; While(a <  b) {a = a + 1}))]
+Symbol Table:a -> 0 b -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [a = 5, (b = 7 ; While(a <  b) {a = a + 1})]
+Symbol Table:a -> 0 b -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [(b = 7 ; While(a <  b) {a = a + 1})]
+Symbol Table:a -> 5 b -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [b = 7, While(a <  b) {a = a + 1}]
+Symbol Table:a -> 5 b -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [While(a <  b) {a = a + 1}]
+Symbol Table:a -> 5 b -> 7 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [a = a + 1, While(a <  b) {a = a + 1}]
+Symbol Table:a -> 5 b -> 7 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [While(a <  b) {a = a + 1}]
+Symbol Table:a -> 6 b -> 7 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [a = a + 1, While(a <  b) {a = a + 1}]
+Symbol Table:a -> 6 b -> 7 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [While(a <  b) {a = a + 1}]
+Symbol Table:a -> 7 b -> 7 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack:]
+Symbol Table:a -> 7 b -> 7 
+Output: 
+File Table:
+Heap:
+
+==============================
+

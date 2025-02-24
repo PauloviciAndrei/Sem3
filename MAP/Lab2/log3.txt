@@ -1,0 +1,246 @@
+.0=============== ID = 3 ==============
+
+ExecutionStack: [Boolean a, (Int v ; (a = true ; (IF(a) THEN {v = 2}ELSE {v = 3} ; print(v))))]
+Symbol Table:
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [(Int v ; (a = true ; (IF(a) THEN {v = 2}ELSE {v = 3} ; print(v))))]
+Symbol Table:a -> false 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [Int v, (a = true ; (IF(a) THEN {v = 2}ELSE {v = 3} ; print(v)))]
+Symbol Table:a -> false 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [(a = true ; (IF(a) THEN {v = 2}ELSE {v = 3} ; print(v)))]
+Symbol Table:a -> false v -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [a = true, (IF(a) THEN {v = 2}ELSE {v = 3} ; print(v))]
+Symbol Table:a -> false v -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [(IF(a) THEN {v = 2}ELSE {v = 3} ; print(v))]
+Symbol Table:a -> true v -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [IF(a) THEN {v = 2}ELSE {v = 3}, print(v)]
+Symbol Table:a -> true v -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [v = 2, print(v)]
+Symbol Table:a -> true v -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [print(v)]
+Symbol Table:a -> true v -> 2 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack:]
+Symbol Table:a -> true v -> 2 
+Output: 2
+
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack: [Boolean a, (Int v ; (a = true ; (IF(a) THEN {v = 2}ELSE {v = 3} ; print(v))))]
+Symbol Table:
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack: [(Int v ; (a = true ; (IF(a) THEN {v = 2}ELSE {v = 3} ; print(v))))]
+Symbol Table:a -> false 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack: [Int v, (a = true ; (IF(a) THEN {v = 2}ELSE {v = 3} ; print(v)))]
+Symbol Table:a -> false 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack: [(a = true ; (IF(a) THEN {v = 2}ELSE {v = 3} ; print(v)))]
+Symbol Table:a -> false v -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack: [a = true, (IF(a) THEN {v = 2}ELSE {v = 3} ; print(v))]
+Symbol Table:a -> false v -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack: [(IF(a) THEN {v = 2}ELSE {v = 3} ; print(v))]
+Symbol Table:a -> true v -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack: [IF(a) THEN {v = 2}ELSE {v = 3}, print(v)]
+Symbol Table:a -> true v -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack: [v = 2, print(v)]
+Symbol Table:a -> true v -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack: [print(v)]
+Symbol Table:a -> true v -> 2 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:a -> true v -> 2 
+Output: 2
+
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:a -> true v -> 2 
+Output: 2
+
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:a -> true v -> 2 
+Output: 2
+
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:a -> true v -> 2 
+Output: 2
+
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:a -> true v -> 2 
+Output: 2
+
+File Table:
+Heap:
+
+==============================
+

@@ -1,0 +1,76 @@
+=============== ID = 8 ==============
+
+ExecutionStack: [Ref(Int) v, (New(v, 20) ; (print(HeapRead(v)) ; (WriteHeap{v, true} ; print(HeapRead(v) + 5))))]
+Symbol Table:
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 8 ==============
+
+ExecutionStack: [(New(v, 20) ; (print(HeapRead(v)) ; (WriteHeap{v, true} ; print(HeapRead(v) + 5))))]
+Symbol Table:v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 8 ==============
+
+ExecutionStack: [New(v, 20), (print(HeapRead(v)) ; (WriteHeap{v, true} ; print(HeapRead(v) + 5)))]
+Symbol Table:v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 8 ==============
+
+ExecutionStack: [(print(HeapRead(v)) ; (WriteHeap{v, true} ; print(HeapRead(v) + 5)))]
+Symbol Table:v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+0 -> 20
+
+==============================
+
+=============== ID = 8 ==============
+
+ExecutionStack: [print(HeapRead(v)), (WriteHeap{v, true} ; print(HeapRead(v) + 5))]
+Symbol Table:v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+0 -> 20
+
+==============================
+
+=============== ID = 8 ==============
+
+ExecutionStack: [(WriteHeap{v, true} ; print(HeapRead(v) + 5))]
+Symbol Table:v -> Reference(0, Int) 
+Output: 20
+
+File Table:
+Heap:
+0 -> 20
+
+==============================
+
+=============== ID = 8 ==============
+
+ExecutionStack: [WriteHeap{v, true}, print(HeapRead(v) + 5)]
+Symbol Table:v -> Reference(0, Int) 
+Output: 20
+
+File Table:
+Heap:
+0 -> 20
+
+==============================
+

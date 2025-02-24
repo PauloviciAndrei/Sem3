@@ -1,0 +1,125 @@
+=============== ID = 6 ==============
+
+ExecutionStack: [Ref(Int) v, (New(v, 20) ; (Ref(Ref(Int)) a ; (New(a, v) ; (print(v) ; print(a)))))]
+Symbol Table:
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 6 ==============
+
+ExecutionStack: [(New(v, 20) ; (Ref(Ref(Int)) a ; (New(a, v) ; (print(v) ; print(a)))))]
+Symbol Table:v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 6 ==============
+
+ExecutionStack: [New(v, 20), (Ref(Ref(Int)) a ; (New(a, v) ; (print(v) ; print(a))))]
+Symbol Table:v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 6 ==============
+
+ExecutionStack: [(Ref(Ref(Int)) a ; (New(a, v) ; (print(v) ; print(a))))]
+Symbol Table:v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+0 -> 20
+
+==============================
+
+=============== ID = 6 ==============
+
+ExecutionStack: [Ref(Ref(Int)) a, (New(a, v) ; (print(v) ; print(a)))]
+Symbol Table:v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+0 -> 20
+
+==============================
+
+=============== ID = 6 ==============
+
+ExecutionStack: [(New(a, v) ; (print(v) ; print(a)))]
+Symbol Table:a -> Reference(0, Ref(Int)) v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+0 -> 20
+
+==============================
+
+=============== ID = 6 ==============
+
+ExecutionStack: [New(a, v), (print(v) ; print(a))]
+Symbol Table:a -> Reference(0, Ref(Int)) v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+0 -> 20
+
+==============================
+
+=============== ID = 6 ==============
+
+ExecutionStack: [(print(v) ; print(a))]
+Symbol Table:a -> Reference(1, Ref(Int)) v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+0 -> 20
+1 -> Reference(0, Int)
+
+==============================
+
+=============== ID = 6 ==============
+
+ExecutionStack: [print(v), print(a)]
+Symbol Table:a -> Reference(1, Ref(Int)) v -> Reference(0, Int) 
+Output: 
+File Table:
+Heap:
+0 -> 20
+1 -> Reference(0, Int)
+
+==============================
+
+=============== ID = 6 ==============
+
+ExecutionStack: [print(a)]
+Symbol Table:a -> Reference(1, Ref(Int)) v -> Reference(0, Int) 
+Output: Reference(0, Int)
+
+File Table:
+Heap:
+0 -> 20
+1 -> Reference(0, Int)
+
+==============================
+
+=============== ID = 6 ==============
+
+ExecutionStack:]
+Symbol Table:a -> Reference(1, Ref(Int)) v -> Reference(0, Int) 
+Output: Reference(0, Int)
+Reference(1, Ref(Int))
+
+File Table:
+Heap:
+0 -> 20
+1 -> Reference(0, Int)
+
+==============================
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.gui.ProgramSelect">
+    <children>
+        <VBox alignment="CENTER" style="-fx-background-color: #F4F6F9; -fx-padding: 30px;">
+            <children>
+                <ListView fx:id="programsListView" prefHeight="356.0" prefWidth="525.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 12px; -fx-border-radius: 12px; -fx-border-color: #E0E0E0;">
+                    <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </VBox.margin>
+                </ListView>
+                <Button fx:id="displayButton" alignment="BASELINE_CENTER" mnemonicParsing="false" onAction="#displayProgram" prefHeight="50.0" prefWidth="220.0" style="-fx-background-color: #4CAF50; -fx-border-color: #388E3C; -fx-border-radius: 30px; -fx-background-radius: 30px; -fx-font-size: 16px; -fx-font-weight: bold;" text="Display program" textAlignment="CENTER">
+                    <font>
+                        <Font name="Helvetica Neue" size="14.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</StackPane>

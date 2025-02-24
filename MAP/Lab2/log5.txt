@@ -1,0 +1,586 @@
+=============================
+
+ExecutionStack: [String varf, (varf = test.in ; (openFile(varf) ; (Int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf))))))))]
+Symbol Table:
+Output: 
+File Table:
+
+==============================
+
+=============================
+
+ExecutionStack: [(varf = test.in ; (openFile(varf) ; (Int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf))))))))]
+Symbol Table:varf ->  
+Output: 
+File Table:
+
+==============================
+
+=============================
+
+ExecutionStack: [varf = test.in, (openFile(varf) ; (Int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf)))))))]
+Symbol Table:varf ->  
+Output: 
+File Table:
+
+==============================
+
+=============================
+
+ExecutionStack: [(openFile(varf) ; (Int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf)))))))]
+Symbol Table:varf -> test.in 
+Output: 
+File Table:
+
+==============================
+
+=============================
+
+ExecutionStack: [openFile(varf), (Int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf))))))]
+Symbol Table:varf -> test.in 
+Output: 
+File Table:
+
+==============================
+
+=============================
+
+ExecutionStack: [(Int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf))))))]
+Symbol Table:varf -> test.in 
+Output: 
+File Table:
+test.in
+
+==============================
+
+=============================
+
+ExecutionStack: [Int varc, (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf)))))]
+Symbol Table:varf -> test.in 
+Output: 
+File Table:
+test.in
+
+==============================
+
+=============================
+
+ExecutionStack: [(readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf)))))]
+Symbol Table:varf -> test.in varc -> 0 
+Output: 
+File Table:
+test.in
+
+==============================
+
+=============================
+
+ExecutionStack: [readFile(varf,varc), (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf))))]
+Symbol Table:varf -> test.in varc -> 0 
+Output: 
+File Table:
+test.in
+
+==============================
+
+=============================
+
+ExecutionStack: [(print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf))))]
+Symbol Table:varf -> test.in varc -> 15 
+Output: 
+File Table:
+test.in
+
+==============================
+
+=============================
+
+ExecutionStack: [print(varc), (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf)))]
+Symbol Table:varf -> test.in varc -> 15 
+Output: 
+File Table:
+test.in
+
+==============================
+
+=============================
+
+ExecutionStack: [(readFile(varf,varc) ; (print(varc) ; closeReadFile(varf)))]
+Symbol Table:varf -> test.in varc -> 15 
+Output: 15
+
+File Table:
+test.in
+
+==============================
+
+=============================
+
+ExecutionStack: [readFile(varf,varc), (print(varc) ; closeReadFile(varf))]
+Symbol Table:varf -> test.in varc -> 15 
+Output: 15
+
+File Table:
+test.in
+
+==============================
+
+=============================
+
+ExecutionStack: [(print(varc) ; closeReadFile(varf))]
+Symbol Table:varf -> test.in varc -> 50 
+Output: 15
+
+File Table:
+test.in
+
+==============================
+
+=============================
+
+ExecutionStack: [print(varc), closeReadFile(varf)]
+Symbol Table:varf -> test.in varc -> 50 
+Output: 15
+
+File Table:
+test.in
+
+==============================
+
+=============================
+
+ExecutionStack: [closeReadFile(varf)]
+Symbol Table:varf -> test.in varc -> 50 
+Output: 15
+50
+
+File Table:
+test.in
+
+==============================
+
+=============================
+
+ExecutionStack:]
+Symbol Table:varf -> test.in varc -> 50 
+Output: 15
+50
+
+File Table:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [String varf, (varf = test.in ; (openFile(varf) ; (Int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf))))))))]
+Symbol Table:
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [(varf = test.in ; (openFile(varf) ; (Int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf))))))))]
+Symbol Table:varf ->  
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [varf = test.in, (openFile(varf) ; (Int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf)))))))]
+Symbol Table:varf ->  
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [(openFile(varf) ; (Int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf)))))))]
+Symbol Table:varf -> test.in 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [openFile(varf), (Int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf))))))]
+Symbol Table:varf -> test.in 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [(Int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf))))))]
+Symbol Table:varf -> test.in 
+Output: 
+File Table:
+test.in
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [Int varc, (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf)))))]
+Symbol Table:varf -> test.in 
+Output: 
+File Table:
+test.in
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [(readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf)))))]
+Symbol Table:varf -> test.in varc -> 0 
+Output: 
+File Table:
+test.in
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [readFile(varf,varc), (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf))))]
+Symbol Table:varf -> test.in varc -> 0 
+Output: 
+File Table:
+test.in
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [(print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf))))]
+Symbol Table:varf -> test.in varc -> 15 
+Output: 
+File Table:
+test.in
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [print(varc), (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf)))]
+Symbol Table:varf -> test.in varc -> 15 
+Output: 
+File Table:
+test.in
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [(readFile(varf,varc) ; (print(varc) ; closeReadFile(varf)))]
+Symbol Table:varf -> test.in varc -> 15 
+Output: 15
+
+File Table:
+test.in
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [readFile(varf,varc), (print(varc) ; closeReadFile(varf))]
+Symbol Table:varf -> test.in varc -> 15 
+Output: 15
+
+File Table:
+test.in
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [(print(varc) ; closeReadFile(varf))]
+Symbol Table:varf -> test.in varc -> 50 
+Output: 15
+
+File Table:
+test.in
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [print(varc), closeReadFile(varf)]
+Symbol Table:varf -> test.in varc -> 50 
+Output: 15
+
+File Table:
+test.in
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack: [closeReadFile(varf)]
+Symbol Table:varf -> test.in varc -> 50 
+Output: 15
+50
+
+File Table:
+test.in
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack:]
+Symbol Table:varf -> test.in varc -> 50 
+Output: 15
+50
+
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack:]
+Symbol Table:varf -> test.in varc -> 50 
+Output: 15
+50
+
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack:]
+Symbol Table:varf -> test.in varc -> 50 
+Output: 15
+50
+
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 9 ==============
+
+ExecutionStack:]
+Symbol Table:varf -> test.in varc -> 50 
+Output: 15
+50
+
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [String varf, (varf = test.in ; (openFile(varf) ; (Int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf))))))))]
+Symbol Table:
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [(varf = test.in ; (openFile(varf) ; (Int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf))))))))]
+Symbol Table:varf ->  
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [varf = test.in, (openFile(varf) ; (Int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf)))))))]
+Symbol Table:varf ->  
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [(openFile(varf) ; (Int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf)))))))]
+Symbol Table:varf -> test.in 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [openFile(varf), (Int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf))))))]
+Symbol Table:varf -> test.in 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [(Int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf))))))]
+Symbol Table:varf -> test.in 
+Output: 
+File Table:
+test.in
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [Int varc, (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf)))))]
+Symbol Table:varf -> test.in 
+Output: 
+File Table:
+test.in
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [(readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf)))))]
+Symbol Table:varf -> test.in varc -> 0 
+Output: 
+File Table:
+test.in
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [readFile(varf,varc), (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf))))]
+Symbol Table:varf -> test.in varc -> 0 
+Output: 
+File Table:
+test.in
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [(print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf))))]
+Symbol Table:varf -> test.in varc -> 15 
+Output: 
+File Table:
+test.in
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [print(varc), (readFile(varf,varc) ; (print(varc) ; closeReadFile(varf)))]
+Symbol Table:varf -> test.in varc -> 15 
+Output: 
+File Table:
+test.in
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [(readFile(varf,varc) ; (print(varc) ; closeReadFile(varf)))]
+Symbol Table:varf -> test.in varc -> 15 
+Output: 15
+
+File Table:
+test.in
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [readFile(varf,varc), (print(varc) ; closeReadFile(varf))]
+Symbol Table:varf -> test.in varc -> 15 
+Output: 15
+
+File Table:
+test.in
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [(print(varc) ; closeReadFile(varf))]
+Symbol Table:varf -> test.in varc -> 50 
+Output: 15
+
+File Table:
+test.in
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [print(varc), closeReadFile(varf)]
+Symbol Table:varf -> test.in varc -> 50 
+Output: 15
+
+File Table:
+test.in
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack: [closeReadFile(varf)]
+Symbol Table:varf -> test.in varc -> 50 
+Output: 15
+50
+
+File Table:
+test.in
+Heap:
+
+==============================
+
+=============== ID = 3 ==============
+
+ExecutionStack:]
+Symbol Table:varf -> test.in varc -> 50 
+Output: 15
+50
+
+File Table:
+Heap:
+
+==============================
+

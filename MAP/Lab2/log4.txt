@@ -1,0 +1,101 @@
+=============== ID = 4 ==============
+
+ExecutionStack: [Int a, (Int b ; (a = 5 ; (b = 7 ; IF(a >  b) THEN {print(a)}ELSE {print(b)})))]
+Symbol Table:
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 4 ==============
+
+ExecutionStack: [(Int b ; (a = 5 ; (b = 7 ; IF(a >  b) THEN {print(a)}ELSE {print(b)})))]
+Symbol Table:a -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 4 ==============
+
+ExecutionStack: [Int b, (a = 5 ; (b = 7 ; IF(a >  b) THEN {print(a)}ELSE {print(b)}))]
+Symbol Table:a -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 4 ==============
+
+ExecutionStack: [(a = 5 ; (b = 7 ; IF(a >  b) THEN {print(a)}ELSE {print(b)}))]
+Symbol Table:a -> 0 b -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 4 ==============
+
+ExecutionStack: [a = 5, (b = 7 ; IF(a >  b) THEN {print(a)}ELSE {print(b)})]
+Symbol Table:a -> 0 b -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 4 ==============
+
+ExecutionStack: [(b = 7 ; IF(a >  b) THEN {print(a)}ELSE {print(b)})]
+Symbol Table:a -> 5 b -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 4 ==============
+
+ExecutionStack: [b = 7, IF(a >  b) THEN {print(a)}ELSE {print(b)}]
+Symbol Table:a -> 5 b -> 0 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 4 ==============
+
+ExecutionStack: [IF(a >  b) THEN {print(a)}ELSE {print(b)}]
+Symbol Table:a -> 5 b -> 7 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 4 ==============
+
+ExecutionStack: [print(b)]
+Symbol Table:a -> 5 b -> 7 
+Output: 
+File Table:
+Heap:
+
+==============================
+
+=============== ID = 4 ==============
+
+ExecutionStack:]
+Symbol Table:a -> 5 b -> 7 
+Output: 7
+
+File Table:
+Heap:
+
+==============================
+
