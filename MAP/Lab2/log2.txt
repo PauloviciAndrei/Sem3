@@ -441,3 +441,33 @@ Heap:
 
 ==============================
 
+=============== ID = 1 ==============
+
+ExecutionStack: [Int a, (Int b ; (a = 2 + 3 * 5 ; (b = a + 1 ; print(b))))]
+Symbol Table:
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [(Int b ; (a = 2 + 3 * 5 ; (b = a + 1 ; print(b))))]
+Symbol Table:a -> 0 
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [Int b, (a = 2 + 3 * 5 ; (b = a + 1 ; print(b)))]
+Symbol Table:a -> 0 
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+

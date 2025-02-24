@@ -99,3 +99,509 @@ Heap:
 
 ==============================
 
+=============== ID = 1 ==============
+
+ExecutionStack: [Int v, (Ref(Int) a ; (v = 10 ; (New(a, 22) ; (fork((WriteHeap{a, 30} ; (v = 32 ; (print(v) ; print(HeapRead(a)))))) ; (print(v) ; print(HeapRead(a)))))))]
+Symbol Table:
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [(Ref(Int) a ; (v = 10 ; (New(a, 22) ; (fork((WriteHeap{a, 30} ; (v = 32 ; (print(v) ; print(HeapRead(a)))))) ; (print(v) ; print(HeapRead(a)))))))]
+Symbol Table:v -> 0 
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [Ref(Int) a, (v = 10 ; (New(a, 22) ; (fork((WriteHeap{a, 30} ; (v = 32 ; (print(v) ; print(HeapRead(a)))))) ; (print(v) ; print(HeapRead(a))))))]
+Symbol Table:v -> 0 
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [(v = 10 ; (New(a, 22) ; (fork((WriteHeap{a, 30} ; (v = 32 ; (print(v) ; print(HeapRead(a)))))) ; (print(v) ; print(HeapRead(a))))))]
+Symbol Table:a -> Reference(0, Int) v -> 0 
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [v = 10, (New(a, 22) ; (fork((WriteHeap{a, 30} ; (v = 32 ; (print(v) ; print(HeapRead(a)))))) ; (print(v) ; print(HeapRead(a)))))]
+Symbol Table:a -> Reference(0, Int) v -> 0 
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [(New(a, 22) ; (fork((WriteHeap{a, 30} ; (v = 32 ; (print(v) ; print(HeapRead(a)))))) ; (print(v) ; print(HeapRead(a)))))]
+Symbol Table:a -> Reference(0, Int) v -> 10 
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [New(a, 22), (fork((WriteHeap{a, 30} ; (v = 32 ; (print(v) ; print(HeapRead(a)))))) ; (print(v) ; print(HeapRead(a))))]
+Symbol Table:a -> Reference(0, Int) v -> 10 
+Output: 
+File Table:
+Heap:
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [(fork((WriteHeap{a, 30} ; (v = 32 ; (print(v) ; print(HeapRead(a)))))) ; (print(v) ; print(HeapRead(a))))]
+Symbol Table:a -> Reference(0, Int) v -> 10 
+Output: 
+File Table:
+Heap:
+0 -> 22
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [fork((WriteHeap{a, 30} ; (v = 32 ; (print(v) ; print(HeapRead(a)))))), (print(v) ; print(HeapRead(a)))]
+Symbol Table:a -> Reference(0, Int) v -> 10 
+Output: 
+File Table:
+Heap:
+0 -> 22
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [(print(v) ; print(HeapRead(a)))]
+Symbol Table:a -> Reference(0, Int) v -> 10 
+Output: 
+File Table:
+Heap:
+0 -> 22
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack: [(WriteHeap{a, 30} ; (v = 32 ; (print(v) ; print(HeapRead(a)))))]
+Symbol Table:a -> Reference(0, Int) v -> 10 
+Output: 
+File Table:
+Heap:
+0 -> 22
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [print(v), print(HeapRead(a))]
+Symbol Table:a -> Reference(0, Int) v -> 10 
+Output: 
+File Table:
+Heap:
+0 -> 22
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack: [WriteHeap{a, 30}, (v = 32 ; (print(v) ; print(HeapRead(a))))]
+Symbol Table:a -> Reference(0, Int) v -> 10 
+Output: 
+File Table:
+Heap:
+0 -> 22
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack: [print(HeapRead(a))]
+Symbol Table:a -> Reference(0, Int) v -> 10 
+Output: 10
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack: [(v = 32 ; (print(v) ; print(HeapRead(a))))]
+Symbol Table:a -> Reference(0, Int) v -> 10 
+Output: 10
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack:]
+Symbol Table:a -> Reference(0, Int) v -> 10 
+Output: 10
+30
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack: [v = 32, (print(v) ; print(HeapRead(a)))]
+Symbol Table:a -> Reference(0, Int) v -> 10 
+Output: 10
+30
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack:]
+Symbol Table:a -> Reference(0, Int) v -> 10 
+Output: 10
+30
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack: [(print(v) ; print(HeapRead(a)))]
+Symbol Table:a -> Reference(0, Int) v -> 32 
+Output: 10
+30
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack:]
+Symbol Table:a -> Reference(0, Int) v -> 10 
+Output: 10
+30
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack: [print(v), print(HeapRead(a))]
+Symbol Table:a -> Reference(0, Int) v -> 32 
+Output: 10
+30
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack:]
+Symbol Table:a -> Reference(0, Int) v -> 10 
+Output: 10
+30
+32
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack: [print(HeapRead(a))]
+Symbol Table:a -> Reference(0, Int) v -> 32 
+Output: 10
+30
+32
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack:]
+Symbol Table:a -> Reference(0, Int) v -> 10 
+Output: 10
+30
+32
+30
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:a -> Reference(0, Int) v -> 32 
+Output: 10
+30
+32
+30
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack:]
+Symbol Table:a -> Reference(0, Int) v -> 10 
+Output: 10
+30
+32
+30
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:a -> Reference(0, Int) v -> 32 
+Output: 10
+30
+32
+30
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack:]
+Symbol Table:a -> Reference(0, Int) v -> 10 
+Output: 10
+30
+32
+30
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:a -> Reference(0, Int) v -> 32 
+Output: 10
+30
+32
+30
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack:]
+Symbol Table:a -> Reference(0, Int) v -> 10 
+Output: 10
+30
+32
+30
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:a -> Reference(0, Int) v -> 32 
+Output: 10
+30
+32
+30
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack:]
+Symbol Table:a -> Reference(0, Int) v -> 10 
+Output: 10
+30
+32
+30
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:a -> Reference(0, Int) v -> 32 
+Output: 10
+30
+32
+30
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack:]
+Symbol Table:a -> Reference(0, Int) v -> 10 
+Output: 10
+30
+32
+30
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:a -> Reference(0, Int) v -> 32 
+Output: 10
+30
+32
+30
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack:]
+Symbol Table:a -> Reference(0, Int) v -> 10 
+Output: 10
+30
+32
+30
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:a -> Reference(0, Int) v -> 32 
+Output: 10
+30
+32
+30
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+
+=============== ID = 1 ==============
+
+ExecutionStack:]
+Symbol Table:a -> Reference(0, Int) v -> 10 
+Output: 10
+30
+32
+30
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+
+=============== ID = 2 ==============
+
+ExecutionStack:]
+Symbol Table:a -> Reference(0, Int) v -> 32 
+Output: 10
+30
+32
+30
+
+File Table:
+Heap:
+0 -> 30
+BarrierTable:
+==============================
+

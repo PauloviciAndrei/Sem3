@@ -1,0 +1,8 @@
+bool a;
+int v;
+a = true;
+if (a) then
+    v = 2;
+else
+    v = 3;
+print(v);

@@ -1,0 +1,9 @@
+string varf;
+varf = "test.in";
+openFile(varf);
+int varc;
+readFile(varf, varc);
+print(varc);
+readFile(varf, varc);
+print(varc);
+closeFile(varf);

@@ -1,0 +1,12 @@
+int v;
+Reference int a;
+v = 10;
+new(a, 22);
+fork(
+    WriteHeap(a, 30);
+    v = 32;
+    print(v);
+    print(ReadHeap(a));
+);
+print(v);
+print(ReadHeap(a));

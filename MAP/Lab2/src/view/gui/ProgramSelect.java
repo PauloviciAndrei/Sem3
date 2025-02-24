@@ -3,6 +3,7 @@ package view.gui;
 import controller.Controller;
 import exceptions.ExpressionException;
 import exceptions.StatementException;
+import hardcoded.FileCodedPrograms;
 import hardcoded.HardcodedPrograms;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -72,6 +73,7 @@ public class ProgramSelect {
     @FXML
     private ObservableList<IStmt> getAllStatements() {
 
-        return FXCollections.observableArrayList(HardcodedPrograms.hardCodedPrograms);
+        FileCodedPrograms fileCodedPrograms = new FileCodedPrograms();
+        return FXCollections.observableArrayList(fileCodedPrograms.getFileCodedPrograms());
     }
 }

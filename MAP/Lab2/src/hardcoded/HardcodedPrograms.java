@@ -87,7 +87,7 @@ public class HardcodedPrograms {
                     new AssignStmt("a",new ArithmeticExpression('+',new VariableExpression("a"), new ValueExpression(new
                             IntValue(1)))))))));
 
-    /* int v; Ref int a; v=10; new(a,22); fork(wH(a,30); v=32; print(v); print(rH(a))); print(v); print(rH(a)) */
+    /* int v; Reference int a; v=10; new(a,22); fork(WriteHeap(a,30); v=32; print(v); print(ReadHeap(a))); print(v); print(ReadHeao(a)) */
     public final static IStmt ex10 = new CompositeStmt(new VariableDeclarationStmt("v", new IntType()),
             new CompositeStmt(new VariableDeclarationStmt("a", new ReferenceType(new IntType())),
                     new CompositeStmt(new AssignStmt("v", new ValueExpression(new IntValue(10))),

@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import repository.Repository;
+import statementParser.FileParser;
 import view.Command.*;
 import javafx.application.Application;
 import javafx.application.Application;
@@ -14,6 +15,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.util.Objects;
 
 public class Main extends Application {
@@ -31,7 +33,12 @@ public class Main extends Application {
 
         Repository repo1 = new Repository("log1.txt");
         Controller controller1 = new Controller(repo1);
-        controller1.addProgram(HardcodedPrograms.ex1);
+        try
+        {
+            controller1.addProgram(FileParser.parseFile("ex1.txt"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
         Repository repo2 = new Repository("log2.txt");
         Controller controller2 = new Controller(repo2);

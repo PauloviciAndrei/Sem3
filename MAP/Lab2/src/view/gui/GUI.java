@@ -1,11 +1,16 @@
 package view.gui;
 
+import hardcoded.FileCodedPrograms;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import model.statements.IStmt;
+import statementParser.FileParser;
+import statementParser.StatementParser;
 
+import java.io.IOException;
 import java.util.Objects;
 
 public class GUI extends Application {
@@ -35,6 +40,10 @@ public class GUI extends Application {
     }
 
     public static void main(String[] args) {
+
+        FileCodedPrograms fileCodedPrograms = new FileCodedPrograms();
+        for(IStmt stmt : fileCodedPrograms.getFileCodedPrograms())
+            System.out.println(stmt);
         launch(args);
     }
 }
